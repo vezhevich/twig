@@ -1,5 +1,15 @@
+@import "base/normalize";
 
-@import "base/reset.scss";
+@import "layout/layout";
 
+/*Кастомные настроки, типографика и пр*/
+@import "base/custom";
 
+/*Все подключеные шрифты здесь*/
+@import "base/fonts";
 
+/*Все кнопки здесь*/
+@import "base/buttons";
+
+/* гамбургеры тут */
+@import "utilites/hamburger";

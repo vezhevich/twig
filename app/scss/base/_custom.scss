@@ -1,46 +1,99 @@
-html {-webkit-font-smoothing: antialiased; height: 100%; font-style: 100%;}
-body {font-family: $brand-font, sans-serif; background-color: #fff; height: 100%; }
+html {
+	-webkit-font-smoothing: antialiased; 
+	-moz-osx-font-smoothing: grayscale;
+	height: 100%; 
+	font-size: 15px;
+}
+body {
+	font-family: "ProximaNova-Regular", sans-serif; 
+	height: 100%; 
+	font-size: 1rem;
+	background-color: #f3f3f3;
+}
 
-input {-webkit-appearance: none; -moz-appearance: none; appearance: none;}
-textarea {-webkit-appearance: none; -moz-appearance: none; appearance: none;}
+/*Применить конкретно к объекту а не глобально*/
+/*input {
+	-webkit-appearance: none; 
+	-moz-appearance: none; 
+	appearance: none;
+}
 
-strong {font-weight: bold;}
+textarea {
+	-webkit-appearance: none; 
+	-moz-appearance: none; 
+	appearance: none;
+}*/
 
-*::-webkit-input-placeholder {color: #C1C1C1; opacity: 1; font-weight: normal;}
-*:-moz-placeholder {color: #C1C1C1; opacity: 1; font-weight: normal;}
-*::-moz-placeholder {color: #C1C1C1; opacity: 1; font-weight: normal;}
-*:-ms-input-placeholder {color: #C1C1C1; opacity: 1; font-weight: normal;}
+strong {
+	font-weight: bold;
+}
 
-.close {opacity: 1; -ms-filter: "progid:DXImageTransform.Microsoft.Alpha(Opacity=100)"; filter: alpha(opacity=100);}
+*::-webkit-input-placeholder {
+	color: #2C2B29; 
+	opacity: 1; 
+	font-weight: normal;
+}
 
-table {border-collapse: collapse; border-spacing:0; width: 100%; margin-bottom: 40px;}
-table tr td, table tr th {padding:10px 0; text-align:left;}
-table tr td {font: normal 14px $brand-font; color: #000;}
-table tr th {font-size: 14px; color: #777777;}
+*:-moz-placeholder {
+	color: #2C2B29; 
+	opacity: 1; 
+	font-weight: normal;
+}
 
-a {text-decoration:underline; color: $linkcolor; outline: none !important; font-weight: normal; font-family: $brand-font;  -webkit-transition: .1s ease-in-out; -moz-transition: .1s ease-in-out; -o-transition: .1s ease-in-out; transition: .1s ease-in-out;}
-a:hover {color: $linkcolor-hover; text-decoration: none;}
+*::-moz-placeholder {
+	color: #2C2B29; 
+	opacity: 1; 
+	font-weight: normal;
+}
 
-ul {margin-bottom: 30px;}
-ul li {font: normal 14px/28px $brand-font; color: #000; margin-bottom: 10px; position: relative; padding-left: 20px;}
-ul li:before {content: ''; display: block; zoom: 1; *display: inline; width: 10px; height: 2px; background: #000000; vertical-align: middle; position: absolute; left: 0; top: 13px;}
+*:-ms-input-placeholder {
+	color: #2C2B29; 
+	opacity: 1; 
+	font-weight: normal;
+}
 
-ol {counter-reset: myCounter; margin-left: -20px; margin-bottom: 20px;}
-ol li {list-style: none; position: relative; margin-bottom: 10px; padding-left: 20px; min-height: 40px; font: 400 16px/28px $brand-font; color: #555555;}
-ol li strong {display: block; font: normal 16px/28px $brand-font;}
-ol li:before {counter-increment: myCounter; content:counter(myCounter)". "; color: #e17000; display: block; position: absolute; top: 0px; left: 0; font-weight: 400; font-size: 16px; font-family: $brand-font;}
+a {
+	text-decoration:underline; 
+	outline: none; 
+	font-weight: normal; 
+	-webkit-transition: .1s ease-in-out; 
+	-moz-transition: .1s ease-in-out; 
+	-o-transition: .1s ease-in-out; 
+	transition: .1s ease-in-out;
+}
 
-h1, h2, h3, h4, h5, h6 {color: #000; font-family: $brand-font; font-weight: bold;}
+a:hover {
+	text-decoration: none;
+}
 
+h1, h2 {
+	color: #1A1A1A; 
+	font-family: "ProximaNova-Bold";
+	margin-top: 0;
+	text-transform: uppercase;
+}
 
-h2 {font-size: 1.875rem; line-height: 35px; margin:0 0 40px 0;} 
+h1 {
+	font-size: 2.6667rem;
+	line-height: 43px;
+	text-transform: none;
+}
 
+h2 {
+	font-size: 1.3333rem;
+	line-height: 20px;
+	margin-bottom: 20px;
+	margin-top: 0;
+	letter-spacing: 0.48px;
+}
 
-p {font:normal 16px/24px $brand-font; margin:0 0 20px 0; color: $brand-color;}
-
-.text-center {text-align: center;}
-.text-left {text-align: left;}
-.text-right {text-align: right;}
+p {
+	font-size: 1rem;
+	line-height: 20px;
+	margin:0 0 20px 0; 
+	color: #1A1A1A;
+	font-weight: normal;
+}
 
 .clearfix:after {
   content: "";
@@ -48,3 +101,85 @@ p {font:normal 16px/24px $brand-font; margin:0 0 20px 0; color: $brand-color;}
   clear: both;
 }
 
+* {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+*:before,
+*:after {
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.content-center {
+	text-align: center;
+}
+
+.main-title-link {
+	font-size: 1rem;
+	line-height: 20px;
+	font-family: "ProximaNova-Regular";
+	text-transform: none;
+	color: #1A1A1A;
+	margin-left: 20px;
+	letter-spacing: 0;
+}
+
+.visible-xs {
+	display: none;
+}
+
+.main-title-h1 {
+	font-family: "ProximaNova-Semibold";
+	font-weight: normal;
+}
+
+/* фиксируем body когда открываем меню на мобиле */
+.body-fixed {
+	overflow: hidden;
+}
+
+@media screen and (max-width: 767px) {
+	.hidden-xs {
+		display: none!important;
+	}
+
+	h2 {
+		padding-left: 10px;
+		padding-right: 10px;
+		font-size: 1rem;
+		line-height: 20px;
+		margin-bottom: 10px;
+	}
+
+	.visible-xs {
+		display: block!important;
+	}
+
+	.main-title-carousel {
+		padding-right: 100px;
+	}
+
+	.main-title-h1 {
+		display: none;
+	}
+
+	.main-title-h1--modified {
+		display: block;
+	}
+
+	.main-title-link {
+		margin-left: 0;
+		display: inline-block;
+	}
+
+	h2 {
+		padding-right: 80px;
+	}
+
+	h2 > span {
+		margin-right: 20px;
+	}
+}

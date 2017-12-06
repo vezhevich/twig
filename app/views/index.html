@@ -6,11 +6,15 @@
     <meta name="description" content="A demo of how to use gulp-twig"/>
     <meta name="author" content="Simon de Turck"/>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <title>{{ title }}</title>
+    <link rel="stylesheet" href="css/libs.min.css">
+	<link rel="stylesheet" href="css/main.css">
+    <title>Gulp and Twig</title>
  
 </head>
 <body>
-{{ title }}
-{{ title }}
+Gulp and Twig
+Gulp and Twig
+{% include "layouts/nav.html" %}
+{% include "chunks/footer.html" %}
 </body>
 </html>

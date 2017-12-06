@@ -10,7 +10,8 @@ var gulp = require('gulp'),
   pngquant = require('imagemin-pngquant'),
   cache = require('gulp-cache'),
   autoprefixer = require('gulp-autoprefixer'),
-  twig = require('gulp-twig');
+  twig = require('gulp-twig'),
+  dataJson = require("gulp-data-json");
 
 gulp.task('sass', function() {
   return gulp.src('app/scss/*.+(scss|sass)')
@@ -66,10 +67,10 @@ gulp.task('img', function() {
 });
 
 gulp.task('templates', function() {
-    return gulp.src('app/views/*.html') // run the Twig template parser on all .html files in the "src" directory
+    return gulp.src('app/views/*.html')
         .pipe(twig())
         .pipe(gulp.dest('app'))
-        .pipe(browserSync.reload({stream: true})); // output the rendered HTML files to the "dist" directory
+        .pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('watch', ['browser-sync', 'css-libs', 'scripts', 'templates'], function() {

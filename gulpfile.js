@@ -67,10 +67,10 @@ gulp.task('img', function() {
 });
 
 gulp.task('templates', function() {
-    return gulp.src('app/views/*.html') // run the Twig template parser on all .html files in the "src" directory
+    return gulp.src('app/views/*.html')
         .pipe(twig())
         .pipe(gulp.dest('app'))
-        .pipe(browserSync.reload({stream: true})); // output the rendered HTML files to the "dist" directory
+        .pipe(browserSync.reload({stream: true}));
 });
 
 gulp.task('watch', ['browser-sync', 'css-libs', 'scripts', 'templates'], function() {

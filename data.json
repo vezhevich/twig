@@ -1,0 +1,18 @@
+{
+	"menuLink": [
+	  {
+	    "title": "Избранное",
+	    "link": "#",
+	    "customClasses": ""
+	  },
+	  {
+	    "title": "Доставка",
+	    "link": "#",
+	    "customClasses": ""
+	  },
+	  {
+	    "title": "Оплата",
+	    "link": "#",
+	    "customClasses": ""
+	  }
+}

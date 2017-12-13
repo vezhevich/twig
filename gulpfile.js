@@ -10,7 +10,8 @@ var gulp = require('gulp'),
   pngquant = require('imagemin-pngquant'),
   cache = require('gulp-cache'),
   autoprefixer = require('gulp-autoprefixer'),
-  twig = require('gulp-twig');
+  twig = require('gulp-twig'),
+  dataJson = require("gulp-data-json");
 
 gulp.task('sass', function() {
   return gulp.src('app/scss/*.+(scss|sass)')

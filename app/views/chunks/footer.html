@@ -1,1 +1,39 @@
-<footer>тут подвал</footer>
+{% set aboutIcons = {
+  1 : {
+  	"title": "Почистят холодильник", 
+	"text": "Все включено",
+	"img": "/images/img.jpg"
+	},
+  2 : {
+  	"title": "Помоют духовку", 
+  	"text": "Все включено",
+  	"img": "/images/img.jpg"
+  	},
+  3 : {
+  	"title": "Помоют посуду", 
+  	"text": "Все включено",
+  	"img": "/images/img.jpg"
+	},
+  4 : {
+  	"title": "Приберутся на балконе", 
+  	"text": "Все включено",
+  	"img": "/images/img.jpg"
+  }
+} %}
+
+
+<footer>
+	{% for item in aboutIcons %}
+      <div class="about-icons-item">
+        <div class="about-icons-item-title">
+          {{ item.title }}
+        </div>
+        <div class="about-icons-item-text">
+          {{ item.text }}
+        </div>        
+        <div class="about-icons-item-image">
+          <img src="{{ item.img }}" alt="">
+        </div>
+      </div>
+	{% endfor %}
+</footer>
